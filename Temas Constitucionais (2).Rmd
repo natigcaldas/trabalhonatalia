@@ -1,0 +1,498 @@
+---
+title: "TÃ­tulos Constitucionais"
+author: "NatÃ¡lia Grassano Caldas"
+date: "17 de janeiro de 2019"
+references: 
+  - id: ernani1
+    title: Judicialização da Política no Brasil. Análise Social
+    author: CARVALHO, Ernani Rodrigues de 
+      - family: 
+        given: 
+    container title: 
+    volume: 191
+    URL: 
+    DOI:
+    issue:
+    publisher: 
+    page: 315-335
+    type: article-journal
+    issued:
+      year: 2009
+      month: 
+      journal: 
+      
+ - id: ernani2
+    title: Revisão Judicial e Judicialização da Política no Direito Ocidental: Aspectos Relevantes de sua Gênese e Desenvolvimento
+    author: CARVALHO, Ernani Rodrigues de 
+      - family: 
+        given: 
+    container title: 
+    volume: 28
+    URL: 
+    DOI:
+    issue:
+    publisher:
+    page: 161-179
+    type: article-journal
+    issued:
+      year: 2007
+      month: 
+      journal: Revista de Sociologia e Política
+      
+ - id: ernani3
+    title: O Supremo Tribunal Federal: das trincheiras de defesa dos direitos individuais ao processo decisório do Estado
+    author: CARVALHO, Ernani Rodrigues de 
+      - family: 
+        given: 
+    container title: 
+    volume: 
+    URL: 
+    DOI:
+    issue:
+    publisher: 
+    page: 77-94
+    type: article-journal
+    issued:
+      year: 2008
+      month: 
+      journal: Vinte anos de Constituição
+      
+ - id: taylor
+    title: Judging policy: Courtsand Policy Reform in Democratic Brazil
+    author: TAYLOR, Matthew 
+      - family: 
+        given: 
+    container title: 
+    volume: 
+    URL: 
+    DOI:
+    issue:
+    publisher: Stanford: Stanford University Press
+    page:
+    type: book
+    issued:
+      year: 2008
+      month: 
+      journal: 
+      
+ - id: henry
+    title: The judicial process
+    author: ABRAHAM, Henry J 
+      - family: 
+        given: 
+    container title: 
+    volume: 
+    URL: 
+    DOI:
+    issue:
+    publisher: Oxford: Oxford University Press
+    page:
+    type: book
+    issued:
+      year: 1998
+      month: 
+      journal: 
+      
+ - id: isnie
+    title: The Rule of Law in Brazilian States' Legislation: Evidences From Brazilian Supreme Court
+    author: BARBOSA, Leon Victor Queiroz; GOMES NETO, José Mário Wanderley; CARVALHO NETO, Ernani Rodrigues; SANTOS, Fabrizio Polany Almeida 
+      - family: 
+        given: 
+    container title: 
+    volume: 
+    URL: 
+    DOI:
+    issue:
+    publisher: 
+    page:
+    type: article
+    issued:
+      year: 2009
+      month: 
+      journal: 13th Annual Conference of International Society for New Institutional Economics
+      
+ - id: barroso
+    title: O controle de constitucionalidade no Direito Brasileiro
+    author: BARROSO, Luís Roberto 
+      - family: 
+        given: 
+    container title: 
+    volume: 
+    URL: 
+    DOI:
+    issue:
+    publisher: São Paulo: Saraiva
+    page:
+    type: book
+    issued:
+      year: 2008
+      month: 
+      journal: 
+      
+ - id: bonavides
+    title: Jurisdição Constitucional e Legitimidade (algumas observações sobre o Brasil)
+    author: BONAVIDES, Paulo
+      - family: 
+        given: 
+    container title: 
+    volume: 18
+    URL: 
+    DOI:
+    issue:
+    publisher: 
+    page: 51
+    type: article
+    issued:
+      year: 2004
+      month: 
+      journal: Estudos Avançados
+      
+ - id: cappelletti
+    title: The judicial review in the contemporary world
+    author: CAPPELLETTI, Mauro 
+      - family: 
+        given: 
+    container title: 
+    volume: 
+    URL: 
+    DOI:
+    issue:
+    publisher: Indianapolis: Bobbs-Merril Company
+    page: 51
+    type: article
+    issued:
+      year: 1971
+      month: 
+      journal:
+        
+ - id: cappelletti2
+    title: Who Watches the Watchmen? In: The Judicial Process in Comparative Perspective
+    author: CAPPELLETTI, Mauro 
+      - family: 
+        given: 
+    container title: 
+    volume: 
+    URL: 
+    DOI:
+    issue:
+    publisher: Oxford: Clarendon Press.
+    page:
+    type: article
+    issued:
+      year: 1989
+      month: 
+      journal:
+        
+ - id: cappelletti3
+    title: Constituzionalismo moderno e il ruolo del potere giudiziario nelle società contemporanee
+    author: CAPPELLETTI, Mauro 
+      - family: 
+        given: 
+    container title: 
+    volume: 68
+    URL: 
+    DOI:
+    issue:
+    publisher: Oxford: Clarendon Press.
+    page: 47-54
+    type: article
+    issued:
+      year: 1992
+      month: 
+      journal: Revista de Processo
+output: pdf_document
+---
+
+Resumo
+=========
+
+Quais são as restrições enfrentadas pelo Supremo Tribunal Federal (STF) que ocasionam a não inclusão de seus processos em pauta de julgamento? Como os fatores externos podem influenciar no julgamento das ações diretas de inconstitucionalidade (ADIs)? A Corte vem demonstrando, ao longo dos últimos vinte anos, uma tendência cooperativa com os interesses do Poder Executivo, quando acionada pelos mecanismos de controle de constitucionalidade (revisão judicial), seja confirmando a constitucionalidade da legislação, seja ainda simplesmente deixando informalmente de julgar um grande número de conflitos. Os dados originais coletados das decisões tomadas pelo STF no julgamento de ações diretas de inconstitucionalidade apontam na direção da autorrestrição, e essa respectiva abstenção exclui os freios constitucionais, modifica as relações federativas regionais e confere certo grau de liberdade ao legislador diante da ausência de perspectiva de controle judicial de suas atividades. Nesse sentido, uma amostra aleatória de ADINs será colhida do sítio eletrônico do STF e submetida à análise estatística por regressão logística com o objetivo de explicar o comportamento abstensivo judicial.
+
+Introdução
+========
+
+O presente trabalho é fruto de uma inquietação que visa revisitar algumas abordagens sobre o Supremo Tribunal Federal: por que razões um volume considerável de processos do controle de constitucionalidade concentrado permanece inerte durante vários anos sem qualquer decisão (provisória ou definitiva) sobre o litígio que foi submetido à Suprema Corte?
+
+O STF possui um comportamento padrão altamente abstensivo em relação ao julgamento das ADINs. Esse comportamento omissivo é evidenciado em 58,4% dos casos (22,1% rejeitadas por vícios de forma e 36,3% aguardando julgamento) – (Barbosa; Gomes Neto; Carvalho; Santos, 2009). É ressaltado, também, o relevante segmento de 39,26% de ADINs que estão enquadradas entre aquelas que aguardam julgamento (Thamy Pogrebinschi, 2011).
+
+Em números mais recentes, do universo total de 5.680 ações diretas de inconstitucionalidade distribuídas até o dia 7 de abril de 2017, uma parcela de 1.912 processos (34,69%) permanecia aguardando julgamento. Essa aparente estabilidade da fração de processos silenciosamente excluída da apreciação da jurisdição constitucional, no âmbito do STF, dá indícios do exercício de seletividade quanto ao julgamento dos conflitos, fomentando indagações quanto às situações que estariam associadas a maiores ou menores chances de resolução dos litígios constitucionais ou de longos períodos de espera por um pronunciamento acerca da alegada inconstitucionalidade da norma impugnada.
+
+Em uma ADIN, o STF exerce diretamente o seu papel de tribunal constitucional. O julgamento dessa ação, ao contrário das outras, tem efeitos erga omnes, ou seja, seus resultados atingem todos os indivíduos da determinada população. Além disso, uma ADIN deve ser obrigatoriamente julgada pelo Plenário e requer a participação de todos os ministros existentes, enriquecendo ainda mais a análise pretendida. Essas são razões que explicam a popularidade do seu uso na literatura empírica e, também, no propósito dessa pesquisa.
+
+A análise teórica do comportamento judicial e da sua contextualização histórica e política consegue explicar a judicialização da política por meio do aumento expressivo das ações judiciais, entendendo esse enorme aumento processual como uma forma de participação da sociedade civil. O suporte para essa afirmação se encontra nos dados empíricos coletados: o número crescente de ações diretas de inconstitucionalidade (ADINs) no Supremo Tribunal Federal (STF) atesta o quanto o judiciário brasileiro vem sendo “convocado” a participar das decisões políticas no Brasil. 
+
+A investigação deste fenômeno institucional oferece um locus interessante e inovador para o conhecimento do comportamento judicial, especialmente quanto à opção expressa ou tácita pelo não exercício da atividade judicial, isto é, pela autorrestrição.
+
+Trata-se de um comportamento que se apresenta contraditório em relação ao desenho constitucional brasileiro, cujas disposições determinam o dever de apreciação jurisdicional de todas as questões submetidas ao Judiciário (non liquet), sendo a recusa formal ou informal ao exercício de poder que lhe foi delegado pela Constituição um fenômeno que ainda demanda respostas substantivas.
+Sem dúvidas, a expansão do Judiciário, a judicialização da política e todas as suas implicações são fenômenos que tomaram conta do final do século XX.
+
+A integração dos tribunais no contexto político gerou, de fato, alterações significativas no planejamento de instituições políticas. Porém, o funcionamento das cortes judiciais e seu papel no regime político atual tem sido muito pouco estudado pela Ciência Política brasileira. Apesar do papel que uma instituição como o Supremo Tribunal Federal cumpre no cenário político Brasileiro de hoje, ainda se sabe pouco acerca dos mecanismos específicos pelos quais esses atores influenciam ou até determinam o resultado de decisões relativas a fenômenos políticos. Diante disso, é possível reafirmar a relevância do estudo empírico – no qual essa pesquisa se dedica - sobre o comportamento dos Ministros do Supremo Tribunal e as variáveis que o afetam, de forma a integrar essa instituição na análise do processo político decisório nacional. 
+
+Quando se trata de entender o comportamento judicial, notadamente, o que influencia no processo de tomada de decisões – seja a decisão judicial expressa, seja a silenciosa decisão de não levar uma questão a julgamento – a literatura oferece, entre outros, o modelo estratégico, ao qual essa pesquisa é dedicada. 
+Nesse modelo positivo, os juízes se deparam com restrições aos seus objetivos relacionadas com a reação dos seus pares em um tribunal, com a manifestação de atores externos ou, ainda, com a reação da opinião pública quando vão julgar uma ação. 
+
+Diante desse contexto, o objetivo geral da pesquisa é justamente verificar se os fatores estratégicos ligados às ações diretas de inconstitucionalidade que ainda aguardam julgamento influenciam diretamente no tempo em que estas permanecem sem ser julgadas. A hipótese levantada é que os relatores seriam seletivos quanto ao que incluir ou não em pauta de julgamento a partir dos atores envolvidos e das consequências concretas possíveis que possam vir de uma futura decisão. A confirmação ou a negação desta hipótese trará informações relevantes sobre o comportamento do Supremo Tribunal Federal, mais precisamente sobre a existência de uma seletividade na formação da pauta de julgamento.
+
+É importante salientar que, seguindo o mesmo raciocínio realizado por Taylor (2008), está sendo considerado como julgado todo processo de controle concentrado em que a liminar foi concedida.
+
+Mediante o emprego de ferramentas estatísticas (análise por regressão logística), essa pesquisa, como mencionado, busca testar a existência, ou inexistência, de associações entre o não julgamento das ADINs e a presença de uma série de variáveis categóricas, extraídas das informações dos respectivos processos e representativas do modelo estratégico. Para tanto, pretende-se colher uma amostra aleatória de processos, proporcionalmente distribuídos na série temporal compreendida entre 1989 e 2017, do universo de mais de 5.000 ADINs distribuídas desde a promulgação da Constituição Federal de 1988 até aquele momento. Dessa forma, a pesquisa vai tornar possível a identificação dos fatores que podem influenciar os julgadores, notadamente os Ministros do Supremo Tribunal Federal, a não exercer a jurisdição constitucional sobre determinados conflitos, especialmente quanto à silenciosa decisão de não submeter as questões a julgamento.
+
+
+
+
+
+
+
+
+AnÃ¡lise dos dados
+===================
+
+O objetivo das anÃ¡lises serÃ¡ verificar se os temas das AÃ§Ãµes Diretas de Inconstitucionalidade que ainda nÃ£o foram julgadas influenciam diretamente no tempo em que estas permanecem sem serem incluÃ­das em pauta de julgamento. Para tanto, iremos analisar o conjunto de dados descritivamente e ajustaremos um modelo aos dados para determinar se hÃ¡ uma influÃªncia estatisticamente significativa do tÃ­tulo de uma ADIN no tempo que ela permanece fora de pauta.
+
+```{r leitura, echo=FALSE, warning=FALSE, message=FALSE, autodep=TRUE}
+#Pacotes
+if(require(plyr) == F) install.packages('plyr'); require (plyr)
+if(require(dplyr) == F) install.packages('dplyr'); require (dplyr)
+if(require(knitr) == F) install.packages('knitr'); require (knitr)
+if(require(ggplot2) == F) install.packages('ggplot2'); require (ggplot2)
+if(require(gridExtra) == F) install.packages('gridExtra'); require (gridExtra)
+if(require(gamlss) == F) install.packages('gamlss'); require (gamlss)
+if(require(readxl) == F) install.packages('readxl'); require (readxl)
+
+
+#ParÃ¢metros para grÃ¡ficos
+titles <- theme(strip.text = element_text(size = 12), axis.text = element_text(size = 12,color = "black"),                   axis.title = element_text(size = 14), legend.text = element_text(size = 14),
+                legend.title = element_text(size = 14), panel.grid.major = element_blank(),
+                panel.grid.minor = element_blank(), panel.border = element_blank(),
+                panel.background = element_rect(fill="white",size=0.5, linetype="solid",color = "black"),
+                legend.background = element_rect(fill="white",size=0.5, linetype="solid",color = "black"),
+                legend.position="bottom",legend.spacing.x = unit(0.5, 'cm'))
+
+#Trocar pelo seu working directory
+dados <- read_excel("titulos_STF.xlsx")
+
+#Organizando os dados
+dados$ADINS <- factor(dados$ADINS)
+
+#Excluindo um outilier
+dados <- dados %>% filter(TEMPO < max(TEMPO))
+```
+
+AnÃ¡lise Descritiva
+==================
+
+##### TÃ­tulo I
+
+```{r titulo I, echo=FALSE, warning=FALSE, message=FALSE, fig.align='center'}
+#Medidas resumos que iremos utilizar
+estatisticas <- list("N" = length,"MÃ©dia" = mean,"DesvioPadrÃ£o" = sd,"MÃ­nimo" = min,
+                     "1Quartil" = function(x) quantile(x = x,probs = 0.25),
+                     "Mediana" = median,"3Quartil" = function(x) quantile(x = x,probs = 0.75),
+                     "MÃ¡ximo" = max)
+
+#Calcula as medidas resumo para uma variÃ¡vel x
+resumo <- function(x){
+    r <- vector()
+    for(i in 1:length(estatisticas))
+      r[i] <- estatisticas[[i]](x)
+    names(r) <- names(estatisticas)
+    return(r)
+}
+
+#Medidas resumo do tempo fora de pauta por presenÃ§a ou nÃ£o do tÃ­tulo I
+t <- do.call(rbind,tapply(X = dados$TEMPO,INDEX = dados$TI,FUN = resumo))
+kable(t)
+
+#Box-plot do tempo por presenÃ§a ou nÃ£o do tÃ­tulo I
+ggplot(dados,aes(x = TI,y = TEMPO)) + geom_boxplot() + theme_linedraw() + titles + xlab("TÃ­tulo I") + ylab("Tempo")
+
+#O cÃ³digo para os demais tÃ­tulos Ã© anÃ¡logo, trocando apenas TI pelo tÃ­tulo que se quer
+```
+
+##### TÃ­tulo II
+
+```{r titulo II, echo=FALSE, warning=FALSE, message=FALSE, fig.align='center'}
+#Medidas resumo do tempo fora de pauta por presenÃ§a ou nÃ£o do tÃ­tulo II
+t <- do.call(rbind,tapply(X = dados$TEMPO,INDEX = dados$TII,FUN = resumo))
+kable(t)
+
+#Box-plot do tempo por presenÃ§a ou nÃ£o do tÃ­tulo II
+ggplot(dados,aes(x = TII,y = TEMPO)) + geom_boxplot() + theme_linedraw() + titles + xlab("TÃ­tulo II") + ylab("Tempo")
+
+```
+
+##### TÃ­tulo III
+
+```{r titulo III, echo=FALSE, warning=FALSE, message=FALSE, fig.align='center'}
+#Medidas resumo do tempo fora de pauta por presenÃ§a ou nÃ£o do tÃ­tulo III 
+t <- do.call(rbind,tapply(X = dados$TEMPO,INDEX = dados$TIII,FUN = resumo))
+kable(t)
+#Box-plot do tempo por presenÃ§a ou nÃ£o do tÃ­tulo III
+ggplot(dados,aes(x = TIII,y = TEMPO)) + geom_boxplot() + theme_linedraw() + titles + xlab("TÃ­tulo III") + ylab("Tempo")
+
+```
+
+##### TÃ­tulo IV
+
+```{r titulo IV, echo=FALSE, warning=FALSE, message=FALSE, fig.align='center'}
+#Medidas resumo do tempo fora de pauta por presenÃ§a ou nÃ£o do tÃ­tulo IV
+t <- do.call(rbind,tapply(X = dados$TEMPO,INDEX = dados$TIV,FUN = resumo))
+kable(t)
+
+#Box-plot do tempo por presenÃ§a ou nÃ£o do tÃ­tulo IV
+ggplot(dados,aes(x = TIV,y = TEMPO)) + geom_boxplot() + theme_linedraw() + titles + xlab("TÃ­tulo IV") + ylab("Tempo")
+
+```
+
+##### TÃ­tulo V
+```{r titulo V, echo=FALSE, warning=FALSE, message=FALSE, fig.align='center'}
+#Medidas resumo do tempo fora de pauta por presenÃ§a ou nÃ£o do tÃ­tulo V
+t <- do.call(rbind,tapply(X = dados$TEMPO,INDEX = dados$TV,FUN = resumo))
+kable(t)
+
+#Box-plot do tempo por presenÃ§a ou nÃ£o do tÃ­tulo V
+ggplot(dados,aes(x = TV,y = TEMPO)) + geom_boxplot() + theme_linedraw() + titles + xlab("TÃ­tulo V") + ylab("Tempo")
+
+```
+
+#####TÃ­tulo VI
+```{r titulo VI, echo=FALSE, warning=FALSE, message=FALSE, fig.align='center'}
+#Medidas resumo do tempo fora de pauta por presenÃ§a ou nÃ£o do tÃ­tulo VI
+t <- do.call(rbind,tapply(X = dados$TEMPO,INDEX = dados$TVI,FUN = resumo))
+kable(t)
+
+#Box-plot do tempo por presenÃ§a ou nÃ£o do tÃ­tulo VI
+ggplot(dados,aes(x = TVI,y = TEMPO)) + geom_boxplot() + theme_linedraw() + titles + xlab("TÃ­tulo VI") + ylab("Tempo")
+
+```
+
+#####TÃ­tulo VII
+```{r titulo VII, echo=FALSE, warning=FALSE, message=FALSE, fig.align='center'}
+#Medidas resumo do tempo fora de pauta por presenÃ§a ou nÃ£o do tÃ­tulo VII
+t <- do.call(rbind,tapply(X = dados$TEMPO,INDEX = dados$TVII,FUN = resumo))
+kable(t)
+
+#Box-plot do tempo por presenÃ§a ou nÃ£o do tÃ­tulo VII
+ggplot(dados,aes(x = TVII,y = TEMPO)) + geom_boxplot() + theme_linedraw() + titles + xlab("TÃ­tulo VII") + ylab("Tempo")
+```
+
+#####TÃ­tulo VIII
+```{r titulo VIII, fig.align='center', echo=FALSE, warning=FALSE, message=FALSE}
+#Medidas resumo do tempo fora de pauta por presenÃ§a ou nÃ£o do tÃ­tulo VIII
+t <- do.call(rbind,tapply(X = dados$TEMPO,INDEX = dados$TVII,FUN = resumo))
+kable(t)
+
+#Box-plot do tempo por presenÃ§a ou nÃ£o do tÃ­tulo VIII
+ggplot(dados,aes(x = TVIII,y = TEMPO)) + geom_boxplot() + theme_linedraw() + titles + xlab("TÃ­tulo VIII") + ylab("Tempo")
+```
+
+#####TÃ­tulo IX
+```{r titulo IX,echo = FALSE,fig.align='center', echo=FALSE, warning=FALSE, message=FALSE}
+#Medidas resumo do tempo fora de pauta por presenÃ§a ou nÃ£o do tÃ­tulo IX
+t <- do.call(rbind,tapply(X = dados$TEMPO,INDEX = dados$TIX,FUN = resumo))
+kable(t)
+
+#Box-plot do tempo por presenÃ§a ou nÃ£o do tÃ­tulo IX
+ggplot(dados,aes(x = TIX,y = TEMPO)) + geom_boxplot() + theme_linedraw() + titles + xlab("TÃ­tulo IX") + ylab("Tempo")
+
+```
+
+###Modelos EstatÃ­sticos
+
+Agora iremos ajustar um modelo de regressÃ£o para o tempo fora de pauta cujas variÃ¡veis explicativas serÃ£o a presenÃ§a ou nÃ£o de cada tÃ­tulo. ComeÃ§amos ajustando um Modelo de RegressÃ£o Linear Normal. Pela anÃ¡lise de resÃ­duos vemos que este modelo nÃ£o estÃ¡ bem ajustado. De fato, analisando-se o grÃ¡fico QQ-plot dos resÃ­duos padronizados pelos quantis teÃ³ricos, tem-se que os pontos nÃ£o estÃ£o bem ajustados sobre a reta diagonal, apresentando caudas acima da reta. Isso Ã© evidÃªncia de que os erros nÃ£o apresentam distribuiÃ§Ã£o Normal, e por isso nÃ£o seguem a suposiÃ§Ã£o do modelo, de forma que o modelo nÃ£o estÃ¡ bem ajustado. 
+
+```{r modNormal,fig.align='center', echo=FALSE, warning=FALSE, message=FALSE}
+mod1 <- lm(TEMPO ~ TI + TII + TIII + TIV + TV + TVI + TVII + TVIII + TIX,dados)
+kable(anova(mod1))
+
+#AnÃ¡lise de resÃ­duos para modelo normal
+resanalysis <- function(model){
+  #RESIDUOS, DISTANCIA DE COOK E PONTOS INFLUENTES
+  res <- rstandard(model)
+  fit <- model$fitted.values
+  cook <- cooks.distance(model)
+  influ <- influence(model)$hat
+   
+  #GRAFICO DE RESIDUOS
+  p1 <- {ggplot(data.frame(fit,res),aes(x = fit,y = res)) + geom_point() + theme_linedraw() + titles + 
+      geom_hline(yintercept = c(-2,0,2)) + xlab("Valores ajustados") + ylab("ResÃ­duos padronizados") +
+      ggtitle("Grafico dos resÃ­duos padronizados")}
+  
+  #QQ-PLOT
+  g1 <- ggplot(data.frame(res), aes(sample = res))
+  y <- quantile(res[!is.na(res)], c(0.25, 0.75))
+  x <- qnorm(c(0.25, 0.75))
+  slope <- diff(y)/diff(x)
+  int <- y[1L] - slope * x[1L]
+  p2 <- {g1 + stat_qq() + theme_linedraw() + geom_abline(slope = slope, intercept = int) +
+      titles + xlab("Quantis teÃ³ricos") + ylab("ResÃ­duos padronizados") + ggtitle("QQ-Plot")}
+  
+  #GRAFICO DAS DISTANCIAS DE COOK
+  obs <- 1:length(res)
+  g3 <- data.frame(1:length(res),cook)
+  colnames(g3) <- c("obs","cook")
+  p3 <- {ggplot(g3,aes(x = obs,y = cook)) + geom_point() + theme_linedraw() + titles + xlab("ObservaÃ§Ã£o") + 
+      ylab("DistÃ¢ncia de Cook") + ggtitle("DistÃ¢ncia de Cook") + geom_hline(yintercept = 4/length(res)) +
+  annotate("text",size = 3,x = obs[rank(cook) == length(res)]+log(log(length(res)))*(0.75),y = cook[rank(cook) == length(res)],label = as.character(obs[rank(cook) == length(res)])) +
+  annotate("text",size = 3,x = obs[rank(cook) == length(res)-1]+log(log(length(res)))*(0.75),y = cook[rank(cook) == length(res)-1],label = as.character(obs[rank(cook) == length(res)-1]))+
+  annotate("text",size = 3,x = obs[rank(cook) == length(res)-2]+log(log(length(res)))*(0.75),y = cook[rank(cook) == length(res)-2],label = as.character(obs[rank(cook) == length(res)-2]))}
+  
+  #GRAFICO DE INFLUENCIA
+  g4 <- data.frame(1:length(res),influ)
+  colnames(g4) <- c("obs","influ")
+  p4 <- {ggplot(g4,aes(x = obs,y = influ)) + geom_point() + theme_linedraw() + titles + xlab("ObservaÃ§Ã£o") + 
+           ylab("Hat matrix diagonal") + ggtitle("InfluÃªncia")+
+           annotate("text",size = 3,x = obs[rank(influ) == length(res)]+log(log(length(res)))*(0.75),y = influ[rank(influ) == length(res)],label = as.character(obs[rank(influ) == length(res)])) +
+           annotate("text",size = 3,x = obs[rank(influ) == length(res)-1]+log(log(length(res)))*(0.75),y = influ[rank(influ) == length(res)-1],label = as.character(obs[rank(influ) == length(res)-1]))+
+           annotate("text",size = 3,x = obs[rank(influ) == length(res)-2]+log(log(length(res)))*(0.75),y = influ[rank(influ) == length(res)-2],label = as.character(obs[rank(influ) == length(res)-2]))}
+  
+  p <- grid.arrange(p1,p2,p3,p4,nrow = 2,ncol = 2)
+  r <- list(p)
+  names(r) <- c("plot")
+  return(r)
+}
+r <- resanalysis(mod1)
+```
+
+ApÃ³s uma transformaÃ§Ã£o do tempo pelo logaritmo ajustamos um novo Modelo de RegressÃ£o Linear Normal. Novamente, vemos pela anÃ¡lise de resÃ­duos que o modelo nÃ£o estÃ¡ bem ajustado e, novamente, analisando-se o grÃ¡fico QQ-plot dos resÃ­duos padronizados pelos quantis teÃ³ricos, tem-se que os pontos nÃ£o estÃ£o bem ajustados sobre a reta diagonal, apresentando caudas acima da reta. Isso Ã© evidÃªncia de que os erros nÃ£o apresentam distribuiÃ§Ã£o Normal, e por isso nÃ£o seguem a suposiÃ§Ã£o do modelo, de forma que o modelo nÃ£o estÃ¡ bem ajustado. 
+
+```{r modNormalLog,fig.align='center', echo=FALSE, warning=FALSE, message=FALSE}
+mod2 <- lm(log(TEMPO) ~ TI + TII + TIII + TIV + TV + TVI + TVII + TVIII + TIX,dados)
+kable(anova(mod2))
+r <- resanalysis(mod2)
+```
+
+Agora ajustamos um Modelo de RegressÃ£o com resposta exponencial (GLM), no qual observamos, pela anÃ¡lise dos resÃ­duos, que o modelo parece estar bem ajustado, jÃ¡ que eles se comportam como uma amostra de uma DistribuiÃ§Ã£o Normal. Observamos que, a um nÃ­vel de significÃ¢ncia estatÃ­stica de 5\%, temos que uma ADIN ser de um determinado tema, de qualquer tÃ­tulo que seja, nÃ£o altera o tempo em que estÃ¡ fora de pauta, pois nenhum dos p-valores estÃ£o abaixo de 0,05. A uma significÃ¢ncia de 10\%, apenas o tema TÃ­tulo I influencia o tempo que a ADIN permanece fora de pauta, pois seu p-valor Ã© menor do que 0,10.
+ 
+```{r modExp,fig.align='center',results = 'hide', echo=FALSE, warning=FALSE, message=FALSE}
+mod3 <- gamlss(TEMPO ~ TI + TII + TIII + TIV + TV + TVI + TVII + TVIII + TIX,data = dados,
+               family = EXP())
+s3 <- summary(mod3)
+```
+
+```{r modExp2,fig.align='center', echo=FALSE, warning=FALSE, message=FALSE}
+kable(s3)
+plot(mod3)
+```
+
+Por fim, tambÃ©m ajustamos um Modelo de RegressÃ£o com resposta Gama. Aqui, tambÃ©m observamos, pela anÃ¡lise dos resÃ­duos, que o modelo parece estar bem ajustado. Assim como para o Modelo Exponencial, a um nÃ­vel de significÃ¢ncia estatÃ­stica de 5\%, temos que uma ADIN ser de um determinado tema, de qualquer tÃ­tulo que seja, nÃ£o altera o tempo em que estÃ¡ fora de pauta, pois nenhum dos p-valores estÃ£o abaixo de 0,05. Ainda, a uma significÃ¢ncia de 10\%, apenas o tema TÃ­tulo I influencia o tempo que a ADIN permanece fora de pauta, pois seu p-valor Ã© menor do que 0,10.
+
+```{r modGam,fig.align='center',results = 'hide', echo=FALSE, warning=FALSE, message=FALSE}
+mod4 <- gamlss(TEMPO ~ TI + TII + TIII + TIV + TV + TVI + TVII + TVIII + TIX,data = dados,
+               family = GA())
+s4 <- summary(mod4)
+```
+
+```{r modGam2, fig.align='center', echo=FALSE, warning=FALSE, message=FALSE}
+kable(s4)
+plot(mod4)
+```
+ 
+ConcluÃ­mos assim que, a uma significÃ¢ncia de 5\%, a presenÃ§a de nenhum tema influencia o tempo em que uma ADIN permanece fora de pauta. JÃ¡ a uma significÃ¢ncia de 10\%, apenas a presenÃ§a do tema TÃ­tulo I influencia o tempo em que uma ADIN permanece fora de pauta.
+
+<br>
+
+ReferÃªncias
+===================
+
+

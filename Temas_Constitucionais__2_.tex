@@ -1,0 +1,559 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={TÃ­tulos Constitucionais},
+            pdfauthor={NatÃ¡lia Grassano Caldas},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{longtable,booktabs}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+
+  \title{TÃ­tulos Constitucionais}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{NatÃ¡lia Grassano Caldas}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{17 de janeiro de 2019}
+
+
+\begin{document}
+\maketitle
+
+\section{Resumo}\label{resumo}
+
+Quais são as restrições enfrentadas pelo Supremo Tribunal Federal (STF)
+que ocasionam a não inclusão de seus processos em pauta de julgamento?
+Como os fatores externos podem influenciar no julgamento das ações
+diretas de inconstitucionalidade (ADIs)? A Corte vem demonstrando, ao
+longo dos últimos vinte anos, uma tendência cooperativa com os
+interesses do Poder Executivo, quando acionada pelos mecanismos de
+controle de constitucionalidade (revisão judicial), seja confirmando a
+constitucionalidade da legislação, seja ainda simplesmente deixando
+informalmente de julgar um grande número de conflitos. Os dados
+originais coletados das decisões tomadas pelo STF no julgamento de ações
+diretas de inconstitucionalidade apontam na direção da autorrestrição, e
+essa respectiva abstenção exclui os freios constitucionais, modifica as
+relações federativas regionais e confere certo grau de liberdade ao
+legislador diante da ausência de perspectiva de controle judicial de
+suas atividades. Nesse sentido, uma amostra aleatória de ADINs será
+colhida do sítio eletrônico do STF e submetida à análise estatística por
+regressão logística com o objetivo de explicar o comportamento
+abstensivo judicial.
+
+\section{Introdução}\label{introducao}
+
+O presente trabalho é fruto de uma inquietação que visa revisitar
+algumas abordagens sobre o Supremo Tribunal Federal: por que razões um
+volume considerável de processos do controle de constitucionalidade
+concentrado permanece inerte durante vários anos sem qualquer decisão
+(provisória ou definitiva) sobre o litígio que foi submetido à Suprema
+Corte?
+
+O STF possui um comportamento padrão altamente abstensivo em relação ao
+julgamento das ADINs. Esse comportamento omissivo é evidenciado em
+58,4\% dos casos (22,1\% rejeitadas por vícios de forma e 36,3\%
+aguardando julgamento) -- (Barbosa; Gomes Neto; Carvalho; Santos, 2009).
+É ressaltado, também, o relevante segmento de 39,26\% de ADINs que estão
+enquadradas entre aquelas que aguardam julgamento (Thamy Pogrebinschi,
+2011).
+
+Em números mais recentes, do universo total de 5.680 ações diretas de
+inconstitucionalidade distribuídas até o dia 7 de abril de 2017, uma
+parcela de 1.912 processos (34,69\%) permanecia aguardando julgamento.
+Essa aparente estabilidade da fração de processos silenciosamente
+excluída da apreciação da jurisdição constitucional, no âmbito do STF,
+dá indícios do exercício de seletividade quanto ao julgamento dos
+conflitos, fomentando indagações quanto às situações que estariam
+associadas a maiores ou menores chances de resolução dos litígios
+constitucionais ou de longos períodos de espera por um pronunciamento
+acerca da alegada inconstitucionalidade da norma impugnada.
+
+Em uma ADIN, o STF exerce diretamente o seu papel de tribunal
+constitucional. O julgamento dessa ação, ao contrário das outras, tem
+efeitos erga omnes, ou seja, seus resultados atingem todos os indivíduos
+da determinada população. Além disso, uma ADIN deve ser obrigatoriamente
+julgada pelo Plenário e requer a participação de todos os ministros
+existentes, enriquecendo ainda mais a análise pretendida. Essas são
+razões que explicam a popularidade do seu uso na literatura empírica e,
+também, no propósito dessa pesquisa.
+
+A análise teórica do comportamento judicial e da sua contextualização
+histórica e política consegue explicar a judicialização da política por
+meio do aumento expressivo das ações judiciais, entendendo esse enorme
+aumento processual como uma forma de participação da sociedade civil. O
+suporte para essa afirmação se encontra nos dados empíricos coletados: o
+número crescente de ações diretas de inconstitucionalidade (ADINs) no
+Supremo Tribunal Federal (STF) atesta o quanto o judiciário brasileiro
+vem sendo ``convocado'' a participar das decisões políticas no Brasil.
+
+A investigação deste fenômeno institucional oferece um locus
+interessante e inovador para o conhecimento do comportamento judicial,
+especialmente quanto à opção expressa ou tácita pelo não exercício da
+atividade judicial, isto é, pela autorrestrição.
+
+Trata-se de um comportamento que se apresenta contraditório em relação
+ao desenho constitucional brasileiro, cujas disposições determinam o
+dever de apreciação jurisdicional de todas as questões submetidas ao
+Judiciário (non liquet), sendo a recusa formal ou informal ao exercício
+de poder que lhe foi delegado pela Constituição um fenômeno que ainda
+demanda respostas substantivas. Sem dúvidas, a expansão do Judiciário, a
+judicialização da política e todas as suas implicações são fenômenos que
+tomaram conta do final do século XX.
+
+A integração dos tribunais no contexto político gerou, de fato,
+alterações significativas no planejamento de instituições políticas.
+Porém, o funcionamento das cortes judiciais e seu papel no regime
+político atual tem sido muito pouco estudado pela Ciência Política
+brasileira. Apesar do papel que uma instituição como o Supremo Tribunal
+Federal cumpre no cenário político Brasileiro de hoje, ainda se sabe
+pouco acerca dos mecanismos específicos pelos quais esses atores
+influenciam ou até determinam o resultado de decisões relativas a
+fenômenos políticos. Diante disso, é possível reafirmar a relevância do
+estudo empírico -- no qual essa pesquisa se dedica - sobre o
+comportamento dos Ministros do Supremo Tribunal e as variáveis que o
+afetam, de forma a integrar essa instituição na análise do processo
+político decisório nacional.
+
+Quando se trata de entender o comportamento judicial, notadamente, o que
+influencia no processo de tomada de decisões -- seja a decisão judicial
+expressa, seja a silenciosa decisão de não levar uma questão a
+julgamento -- a literatura oferece, entre outros, o modelo estratégico,
+ao qual essa pesquisa é dedicada. Nesse modelo positivo, os juízes se
+deparam com restrições aos seus objetivos relacionadas com a reação dos
+seus pares em um tribunal, com a manifestação de atores externos ou,
+ainda, com a reação da opinião pública quando vão julgar uma ação.
+
+Diante desse contexto, o objetivo geral da pesquisa é justamente
+verificar se os fatores estratégicos ligados às ações diretas de
+inconstitucionalidade que ainda aguardam julgamento influenciam
+diretamente no tempo em que estas permanecem sem ser julgadas. A
+hipótese levantada é que os relatores seriam seletivos quanto ao que
+incluir ou não em pauta de julgamento a partir dos atores envolvidos e
+das consequências concretas possíveis que possam vir de uma futura
+decisão. A confirmação ou a negação desta hipótese trará informações
+relevantes sobre o comportamento do Supremo Tribunal Federal, mais
+precisamente sobre a existência de uma seletividade na formação da pauta
+de julgamento.
+
+É importante salientar que, seguindo o mesmo raciocínio realizado por
+Taylor (2008), está sendo considerado como julgado todo processo de
+controle concentrado em que a liminar foi concedida.
+
+Mediante o emprego de ferramentas estatísticas (análise por regressão
+logística), essa pesquisa, como mencionado, busca testar a existência,
+ou inexistência, de associações entre o não julgamento das ADINs e a
+presença de uma série de variáveis categóricas, extraídas das
+informações dos respectivos processos e representativas do modelo
+estratégico. Para tanto, pretende-se colher uma amostra aleatória de
+processos, proporcionalmente distribuídos na série temporal compreendida
+entre 1989 e 2017, do universo de mais de 5.000 ADINs distribuídas desde
+a promulgação da Constituição Federal de 1988 até aquele momento. Dessa
+forma, a pesquisa vai tornar possível a identificação dos fatores que
+podem influenciar os julgadores, notadamente os Ministros do Supremo
+Tribunal Federal, a não exercer a jurisdição constitucional sobre
+determinados conflitos, especialmente quanto à silenciosa decisão de não
+submeter as questões a julgamento.
+
+\section{AnÃ¡lise dos dados}\label{analise-dos-dados}
+
+O objetivo das anÃ¡lises serÃ¡ verificar se os temas das AÃ§Ãµes Diretas
+de Inconstitucionalidade que ainda nÃ£o foram julgadas influenciam
+diretamente no tempo em que estas permanecem sem serem incluÃ­das em
+pauta de julgamento. Para tanto, iremos analisar o conjunto de dados
+descritivamente e ajustaremos um modelo aos dados para determinar se hÃ¡
+uma influÃªncia estatisticamente significativa do tÃ­tulo de uma ADIN no
+tempo que ela permanece fora de pauta.
+
+\section{AnÃ¡lise Descritiva}\label{analise-descritiva}
+
+\subparagraph{TÃ­tulo I}\label{tatulo-i}
+
+\begin{longtable}[]{@{}lrrrrrrrr@{}}
+\toprule
+& N & MÃ©dia & DesvioPadrÃ£o & MÃ­nimo & 1Quartil & Mediana & 3Quartil &
+MÃ¡ximo\tabularnewline
+\midrule
+\endhead
+0 & 573 & 2230.672 & 1818.102 & 14 & 817.00 & 1764.0 & 3277.00 &
+8592\tabularnewline
+1 & 106 & 2802.142 & 1994.000 & 29 & 1242.25 & 2497.5 & 4058.25 &
+7450\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{center}\includegraphics{Temas_Constitucionais__2__files/figure-latex/titulo I-1} \end{center}
+
+\subparagraph{TÃ­tulo II}\label{tatulo-ii}
+
+\begin{longtable}[]{@{}lrrrrrrrr@{}}
+\toprule
+& N & MÃ©dia & DesvioPadrÃ£o & MÃ­nimo & 1Quartil & Mediana & 3Quartil &
+MÃ¡ximo\tabularnewline
+\midrule
+\endhead
+0 & 448 & 2349.973 & 1838.452 & 14 & 925.75 & 1875.5 & 3336.75 &
+8592\tabularnewline
+1 & 231 & 2261.532 & 1894.419 & 29 & 757.00 & 1866.0 & 3289.50 &
+7939\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{center}\includegraphics{Temas_Constitucionais__2__files/figure-latex/titulo II-1} \end{center}
+
+\subparagraph{TÃ­tulo III}\label{tatulo-iii}
+
+\begin{longtable}[]{@{}lrrrrrrrr@{}}
+\toprule
+& N & MÃ©dia & DesvioPadrÃ£o & MÃ­nimo & 1Quartil & Mediana & 3Quartil &
+MÃ¡ximo\tabularnewline
+\midrule
+\endhead
+0 & 307 & 2157.528 & 1707.344 & 14 & 765.00 & 1876.0 & 3119.5 &
+8374\tabularnewline
+1 & 372 & 2453.874 & 1963.735 & 22 & 919.25 & 1858.5 & 3612.0 &
+8592\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{center}\includegraphics{Temas_Constitucionais__2__files/figure-latex/titulo III-1} \end{center}
+
+\subparagraph{TÃ­tulo IV}\label{tatulo-iv}
+
+\begin{longtable}[]{@{}lrrrrrrrr@{}}
+\toprule
+& N & MÃ©dia & DesvioPadrÃ£o & MÃ­nimo & 1Quartil & Mediana & 3Quartil &
+MÃ¡ximo\tabularnewline
+\midrule
+\endhead
+0 & 424 & 2220.106 & 1714.425 & 22 & 899 & 1802 & 3209.5 &
+8592\tabularnewline
+1 & 255 & 2485.792 & 2064.793 & 14 & 748 & 2068 & 3694.0 &
+8374\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{center}\includegraphics{Temas_Constitucionais__2__files/figure-latex/titulo IV-1} \end{center}
+
+\subparagraph{TÃ­tulo V}\label{tatulo-v}
+
+\begin{longtable}[]{@{}lrrrrrrrr@{}}
+\toprule
+& N & MÃ©dia & DesvioPadrÃ£o & MÃ­nimo & 1Quartil & Mediana & 3Quartil &
+MÃ¡ximo\tabularnewline
+\midrule
+\endhead
+0 & 629 & 2311.892 & 1899.880 & 14 & 803.0 & 1771.0 & 3369.00 &
+8592\tabularnewline
+1 & 50 & 2420.440 & 1196.089 & 79 & 1364.5 & 2474.5 & 3181.25 &
+4901\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{center}\includegraphics{Temas_Constitucionais__2__files/figure-latex/titulo V-1} \end{center}
+
+\subparagraph{TÃ­tulo VI}\label{tatulo-vi}
+
+\begin{longtable}[]{@{}lrrrrrrrr@{}}
+\toprule
+& N & MÃ©dia & DesvioPadrÃ£o & MÃ­nimo & 1Quartil & Mediana & 3Quartil &
+MÃ¡ximo\tabularnewline
+\midrule
+\endhead
+0 & 496 & 2359.192 & 1944.322 & 14 & 849.75 & 1802 & 3462 &
+8592\tabularnewline
+1 & 183 & 2213.350 & 1595.503 & 29 & 884.50 & 2048 & 3209 &
+7415\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{center}\includegraphics{Temas_Constitucionais__2__files/figure-latex/titulo VI-1} \end{center}
+
+\subparagraph{TÃ­tulo VII}\label{tatulo-vii}
+
+\begin{longtable}[]{@{}lrrrrrrrr@{}}
+\toprule
+& N & MÃ©dia & DesvioPadrÃ£o & MÃ­nimo & 1Quartil & Mediana & 3Quartil &
+MÃ¡ximo\tabularnewline
+\midrule
+\endhead
+0 & 609 & 2294.212 & 1891.154 & 14 & 807.0 & 1775.0 & 3318.0 &
+8592\tabularnewline
+1 & 70 & 2543.243 & 1518.274 & 400 & 1304.5 & 2709.5 & 3382.5 &
+6774\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{center}\includegraphics{Temas_Constitucionais__2__files/figure-latex/titulo VII-1} \end{center}
+
+\subparagraph{TÃ­tulo VIII}\label{tatulo-viii}
+
+\begin{longtable}[]{@{}lrrrrrrrr@{}}
+\toprule
+& N & MÃ©dia & DesvioPadrÃ£o & MÃ­nimo & 1Quartil & Mediana & 3Quartil &
+MÃ¡ximo\tabularnewline
+\midrule
+\endhead
+0 & 609 & 2294.212 & 1891.154 & 14 & 807.0 & 1775.0 & 3318.0 &
+8592\tabularnewline
+1 & 70 & 2543.243 & 1518.274 & 400 & 1304.5 & 2709.5 & 3382.5 &
+6774\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{center}\includegraphics{Temas_Constitucionais__2__files/figure-latex/titulo VIII-1} \end{center}
+
+\subparagraph{TÃ­tulo IX}\label{tatulo-ix}
+
+\begin{longtable}[]{@{}lrrrrrrrr@{}}
+\toprule
+& N & MÃ©dia & DesvioPadrÃ£o & MÃ­nimo & 1Quartil & Mediana & 3Quartil &
+MÃ¡ximo\tabularnewline
+\midrule
+\endhead
+0 & 660 & 2323.535 & 1856.027 & 14 & 876 & 1876 & 3326.75 &
+8592\tabularnewline
+1 & 19 & 2193.105 & 1928.975 & 145 & 805 & 1567 & 3205.50 &
+6111\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{center}\includegraphics{Temas_Constitucionais__2__files/figure-latex/titulo IX-1} \end{center}
+
+\subsubsection{Modelos EstatÃ­sticos}\label{modelos-estatasticos}
+
+Agora iremos ajustar um modelo de regressÃ£o para o tempo fora de pauta
+cujas variÃ¡veis explicativas serÃ£o a presenÃ§a ou nÃ£o de cada
+tÃ­tulo. ComeÃ§amos ajustando um Modelo de RegressÃ£o Linear Normal.
+Pela anÃ¡lise de resÃ­duos vemos que este modelo nÃ£o estÃ¡ bem
+ajustado. De fato, analisando-se o grÃ¡fico QQ-plot dos resÃ­duos
+padronizados pelos quantis teÃ³ricos, tem-se que os pontos nÃ£o estÃ£o
+bem ajustados sobre a reta diagonal, apresentando caudas acima da reta.
+Isso Ã© evidÃªncia de que os erros nÃ£o apresentam distribuiÃ§Ã£o
+Normal, e por isso nÃ£o seguem a suposiÃ§Ã£o do modelo, de forma que o
+modelo nÃ£o estÃ¡ bem ajustado.
+
+\begin{longtable}[]{@{}lrrrrr@{}}
+\toprule
+& Df & Sum Sq & Mean Sq & F value & Pr(\textgreater{}F)\tabularnewline
+\midrule
+\endhead
+TI & 1 & 2.921306e+07 & 29213055.84 & 8.5682894 &
+0.0035368\tabularnewline
+TII & 1 & 2.425909e+06 & 2425909.18 & 0.7115275 &
+0.3992387\tabularnewline
+TIII & 1 & 9.603444e+06 & 9603443.91 & 2.8167230 &
+0.0937537\tabularnewline
+TIV & 1 & 6.796689e+06 & 6796689.00 & 1.9934922 &
+0.1584412\tabularnewline
+TV & 1 & 2.700235e+06 & 2700234.93 & 0.7919882 &
+0.3738195\tabularnewline
+TVI & 1 & 2.911356e+04 & 29113.56 & 0.0085391 & 0.9264021\tabularnewline
+TVII & 1 & 5.545047e+06 & 5545046.87 & 1.6263813 &
+0.2026470\tabularnewline
+TVIII & 1 & 8.831452e+04 & 88314.52 & 0.0259030 &
+0.8721861\tabularnewline
+TIX & 1 & 1.232210e+05 & 123220.97 & 0.0361411 &
+0.8492820\tabularnewline
+Residuals & 669 & 2.280914e+09 & 3409438.49 & NA & NA\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{center}\includegraphics{Temas_Constitucionais__2__files/figure-latex/modNormal-1} \end{center}
+
+ApÃ³s uma transformaÃ§Ã£o do tempo pelo logaritmo ajustamos um novo
+Modelo de RegressÃ£o Linear Normal. Novamente, vemos pela anÃ¡lise de
+resÃ­duos que o modelo nÃ£o estÃ¡ bem ajustado e, novamente,
+analisando-se o grÃ¡fico QQ-plot dos resÃ­duos padronizados pelos
+quantis teÃ³ricos, tem-se que os pontos nÃ£o estÃ£o bem ajustados sobre
+a reta diagonal, apresentando caudas acima da reta. Isso Ã© evidÃªncia
+de que os erros nÃ£o apresentam distribuiÃ§Ã£o Normal, e por isso nÃ£o
+seguem a suposiÃ§Ã£o do modelo, de forma que o modelo nÃ£o estÃ¡ bem
+ajustado.
+
+\begin{longtable}[]{@{}lrrrrr@{}}
+\toprule
+& Df & Sum Sq & Mean Sq & F value & Pr(\textgreater{}F)\tabularnewline
+\midrule
+\endhead
+TI & 1 & 12.0038519 & 12.0038519 & 7.7307831 & 0.0055814\tabularnewline
+TII & 1 & 3.8263191 & 3.8263191 & 2.4642459 & 0.1169364\tabularnewline
+TIII & 1 & 0.8479272 & 0.8479272 & 0.5460865 & 0.4601804\tabularnewline
+TIV & 1 & 0.0819567 & 0.0819567 & 0.0527822 & 0.8183611\tabularnewline
+TV & 1 & 8.8407844 & 8.8407844 & 5.6936879 & 0.0173031\tabularnewline
+TVI & 1 & 1.6859235 & 1.6859235 & 1.0857772 & 0.2977851\tabularnewline
+TVII & 1 & 7.9753725 & 7.9753725 & 5.1363408 & 0.0237485\tabularnewline
+TVIII & 1 & 0.2268724 & 0.2268724 & 0.1461115 & 0.7024008\tabularnewline
+TIX & 1 & 0.0067131 & 0.0067131 & 0.0043234 & 0.9475944\tabularnewline
+Residuals & 669 & 1038.7792302 & 1.5527343 & NA & NA\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{center}\includegraphics{Temas_Constitucionais__2__files/figure-latex/modNormalLog-1} \end{center}
+
+Agora ajustamos um Modelo de RegressÃ£o com resposta exponencial (GLM),
+no qual observamos, pela anÃ¡lise dos resÃ­duos, que o modelo parece
+estar bem ajustado, jÃ¡ que eles se comportam como uma amostra de uma
+DistribuiÃ§Ã£o Normal. Observamos que, a um nÃ­vel de significÃ¢ncia
+estatÃ­stica de 5\%, temos que uma ADIN ser de um determinado tema, de
+qualquer tÃ­tulo que seja, nÃ£o altera o tempo em que estÃ¡ fora de
+pauta, pois nenhum dos p-valores estÃ£o abaixo de 0,05. A uma
+significÃ¢ncia de 10\%, apenas o tema TÃ­tulo I influencia o tempo que a
+ADIN permanece fora de pauta, pois seu p-valor Ã© menor do que 0,10.
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\toprule
+& Estimate & Std. Error & t value &
+Pr(\textgreater{}\textbar{}t\textbar{})\tabularnewline
+\midrule
+\endhead
+(Intercept) & 7.6268044 & 0.0925958 & 82.3666403 &
+0.0000000\tabularnewline
+TI & 0.1974928 & 0.1136747 & 1.7373503 & 0.0827856\tabularnewline
+TII & -0.0473660 & 0.0892524 & -0.5306979 & 0.5958043\tabularnewline
+TIII & 0.1114243 & 0.0857278 & 1.2997448 & 0.1941361\tabularnewline
+TIV & 0.0887070 & 0.0863103 & 1.0277680 & 0.3044304\tabularnewline
+TV & 0.0928278 & 0.1662581 & 0.5583354 & 0.5768022\tabularnewline
+TVI & -0.0561610 & 0.0974902 & -0.5760683 & 0.5647628\tabularnewline
+TVII & 0.1278437 & 0.1549730 & 0.8249418 & 0.4096987\tabularnewline
+TVIII & 0.0230261 & 0.1540208 & 0.1494998 & 0.8812043\tabularnewline
+TIX & -0.0490168 & 0.2370453 & -0.2067822 & 0.8362429\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{center}\includegraphics{Temas_Constitucionais__2__files/figure-latex/modExp2-1} \end{center}
+
+\begin{verbatim}
+## ******************************************************************
+##        Summary of the Quantile Residuals
+##                            mean   =  0.05667384 
+##                        variance   =  0.8752136 
+##                coef. of skewness  =  -0.4981755 
+##                coef. of kurtosis  =  2.845134 
+## Filliben correlation coefficient  =  0.9887146 
+## ******************************************************************
+\end{verbatim}
+
+Por fim, tambÃ©m ajustamos um Modelo de RegressÃ£o com resposta Gama.
+Aqui, tambÃ©m observamos, pela anÃ¡lise dos resÃ­duos, que o modelo
+parece estar bem ajustado. Assim como para o Modelo Exponencial, a um
+nÃ­vel de significÃ¢ncia estatÃ­stica de 5\%, temos que uma ADIN ser de
+um determinado tema, de qualquer tÃ­tulo que seja, nÃ£o altera o tempo
+em que estÃ¡ fora de pauta, pois nenhum dos p-valores estÃ£o abaixo de
+0,05. Ainda, a uma significÃ¢ncia de 10\%, apenas o tema TÃ­tulo I
+influencia o tempo que a ADIN permanece fora de pauta, pois seu p-valor
+Ã© menor do que 0,10.
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\toprule
+& Estimate & Std. Error & t value &
+Pr(\textgreater{}\textbar{}t\textbar{})\tabularnewline
+\midrule
+\endhead
+(Intercept) & 7.6268044 & 0.0862583 & 88.4181852 &
+0.0000000\tabularnewline
+TI & 0.1974928 & 0.1058945 & 1.8649949 & 0.0626204\tabularnewline
+TII & -0.0473660 & 0.0831437 & -0.5696887 & 0.5690804\tabularnewline
+TIII & 0.1114243 & 0.0798604 & 1.3952381 & 0.1634077\tabularnewline
+TIV & 0.0887070 & 0.0804031 & 1.1032789 & 0.2703033\tabularnewline
+TV & 0.0928278 & 0.1548790 & 0.5993568 & 0.5491382\tabularnewline
+TVI & -0.0561610 & 0.0908177 & -0.6183925 & 0.5365274\tabularnewline
+TVII & 0.1278437 & 0.1443663 & 0.8855509 & 0.3761782\tabularnewline
+TVIII & 0.0230261 & 0.1434792 & 0.1604837 & 0.8725486\tabularnewline
+TIX & -0.0490168 & 0.2208214 & -0.2219747 & 0.8244014\tabularnewline
+(Intercept) & -0.0708972 & 0.0241886 & -2.9310148 &
+0.0034940\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{center}\includegraphics{Temas_Constitucionais__2__files/figure-latex/modGam2-1} \end{center}
+
+\begin{verbatim}
+## ******************************************************************
+##        Summary of the Quantile Residuals
+##                            mean   =  0.01260403 
+##                        variance   =  1.012228 
+##                coef. of skewness  =  -0.4952551 
+##                coef. of kurtosis  =  2.840702 
+## Filliben correlation coefficient  =  0.9888005 
+## ******************************************************************
+\end{verbatim}
+
+ConcluÃ­mos assim que, a uma significÃ¢ncia de 5\%, a presenÃ§a de
+nenhum tema influencia o tempo em que uma ADIN permanece fora de pauta.
+JÃ¡ a uma significÃ¢ncia de 10\%, apenas a presenÃ§a do tema TÃ­tulo I
+influencia o tempo em que uma ADIN permanece fora de pauta.
+
+\section{ReferÃªncias}\label{referancias}
+
+
+\end{document}
