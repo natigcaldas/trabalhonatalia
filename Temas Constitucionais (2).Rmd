@@ -213,7 +213,7 @@ Introdução
 
 O presente trabalho é fruto de uma inquietação que visa revisitar algumas abordagens sobre o Supremo Tribunal Federal: por que razões um volume considerável de processos do controle de constitucionalidade concentrado permanece inerte durante vários anos sem qualquer decisão (provisória ou definitiva) sobre o litígio que foi submetido à Suprema Corte?
 
-O STF possui um comportamento padrão altamente abstensivo em relação ao julgamento das ADINs. Esse comportamento omissivo é evidenciado em 58,4% dos casos (22,1% rejeitadas por vícios de forma e 36,3% aguardando julgamento) – (Barbosa; Gomes Neto; Carvalho; Santos, 2009). É ressaltado, também, o relevante segmento de 39,26% de ADINs que estão enquadradas entre aquelas que aguardam julgamento (Thamy Pogrebinschi, 2011).
+O STF possui um comportamento padrão altamente abstensivo em relação ao julgamento das ADINs. Esse comportamento omissivo é evidenciado em 58,4% dos casos (22,1% rejeitadas por vícios de forma e 36,3% aguardando julgamento) – [@isnie]. É ressaltado, também, o relevante segmento de 39,26% de ADINs que estão enquadradas entre aquelas que aguardam julgamento (Thamy Pogrebinschi, 2011).
 
 Em números mais recentes, do universo total de 5.680 ações diretas de inconstitucionalidade distribuídas até o dia 7 de abril de 2017, uma parcela de 1.912 processos (34,69%) permanecia aguardando julgamento. Essa aparente estabilidade da fração de processos silenciosamente excluída da apreciação da jurisdição constitucional, no âmbito do STF, dá indícios do exercício de seletividade quanto ao julgamento dos conflitos, fomentando indagações quanto às situações que estariam associadas a maiores ou menores chances de resolução dos litígios constitucionais ou de longos períodos de espera por um pronunciamento acerca da alegada inconstitucionalidade da norma impugnada.
 
@@ -233,15 +233,63 @@ Nesse modelo positivo, os juízes se deparam com restrições aos seus objetivos
 
 Diante desse contexto, o objetivo geral da pesquisa é justamente verificar se os fatores estratégicos ligados às ações diretas de inconstitucionalidade que ainda aguardam julgamento influenciam diretamente no tempo em que estas permanecem sem ser julgadas. A hipótese levantada é que os relatores seriam seletivos quanto ao que incluir ou não em pauta de julgamento a partir dos atores envolvidos e das consequências concretas possíveis que possam vir de uma futura decisão. A confirmação ou a negação desta hipótese trará informações relevantes sobre o comportamento do Supremo Tribunal Federal, mais precisamente sobre a existência de uma seletividade na formação da pauta de julgamento.
 
-É importante salientar que, seguindo o mesmo raciocínio realizado por Taylor (2008), está sendo considerado como julgado todo processo de controle concentrado em que a liminar foi concedida.
+É importante salientar que, seguindo o mesmo raciocínio realizado por [@taylor], está sendo considerado como julgado todo processo de controle concentrado em que a liminar foi concedida.
 
 Mediante o emprego de ferramentas estatísticas (análise por regressão logística), essa pesquisa, como mencionado, busca testar a existência, ou inexistência, de associações entre o não julgamento das ADINs e a presença de uma série de variáveis categóricas, extraídas das informações dos respectivos processos e representativas do modelo estratégico. Para tanto, pretende-se colher uma amostra aleatória de processos, proporcionalmente distribuídos na série temporal compreendida entre 1989 e 2017, do universo de mais de 5.000 ADINs distribuídas desde a promulgação da Constituição Federal de 1988 até aquele momento. Dessa forma, a pesquisa vai tornar possível a identificação dos fatores que podem influenciar os julgadores, notadamente os Ministros do Supremo Tribunal Federal, a não exercer a jurisdição constitucional sobre determinados conflitos, especialmente quanto à silenciosa decisão de não submeter as questões a julgamento.
 
+Judicialização da política e comportamento seletivo do supremo tribunal federal: entre o ativismo e a autorestrição
+===========
 
+A primeira premissa para se resolver o problema objeto desta pesquisa é a compreensão do tema da judicialização da política, principalmente, sobre suas consequências, os antagônicos comportamentos associados ao ativismo e à autorrestrição judiciais.
 
+No Brasil, o sistema de controle de constitucionalidade exercido pelo Judiciário é denominado misto. Em referido sistema, a revisão judicial constitucional é exercida tanto sob o âmbito difuso, quanto pelo concentrado, pois é possível obter pronunciamentos da mais alta Corte (Supremo Tribunal Federal). Pela via de controle difuso, existem recursos ou instrumentos processuais específicos, cuja utilização, para provocação direta da Corte Suprema, é restrita, pela própria Constituição, a poucos agentes políticos relevantes, a exemplo do Presidente da República, dos partidos políticos e do Procurador Geral da República.
 
+A Constituição Federal Brasileira de 1988, além de solidificar as bases do controle de constitucionalidade já existentes, prevê uma série de instrumentos para a provocação da revisão constitucional concentrada: a Ação Direta de Inconstitucionalidade; a Arguição de Descumprimento de Preceito Fundamental; a Ação Declaratória de Constitucionalidade e o Mandado de Injunção. 
 
+Dentre estes, o que apresenta maior utilização e maior relevância nos cenários jurídicos e políticos é a Ação Direta de Inconstitucionalidade, proposta mais de quatro mil e duzentas vezes, ao longo de vinte anos de existência da Constituição Federal, abrangendo temas de grande relevância contidos em legislação federal e estadual [@taylor].
 
+Perceber as consequências políticas do comportamento dos órgãos judiciais quando do controle de constitucionalidade de atos estatais, bem como as variações destas consequências conforme os arranjos institucionais e os contextos históricos-políticos envolvidos apresenta-se como objeto a ser estudado e compreendido pelos cientistas sociais de nossa época.
+
+A judicialização representa a transferência do papel decisório em questões de conteúdo e de repercussões políticas para a esfera dos órgãos judiciais, a partir dos atores políticos tradicionais, dos partidos políticos, dos parlamentares e dos ocupantes de funções executivas. Notadamente, o exercício do controle de constitucionalidade, nos moldes supra referidos, abre espaço para a configuração de um processo de judicialização.
+
+O processo democrático de elaboração de políticas, primariamente exercido por ocupantes de mandatos eletivos, a partir do princípio da maioria, passa a ser desempenhado por entes públicos. Nesses últimos, o arcabouço institucional não foi originalmente concebido para referido papel, mas sim para resolver conflitos conforme instrumentos técnico-formais, mediante os quais o controle de constitucionalidade é exercido.
+
+Nesse passo, o debate acerca da judicialização da política representa uma abordagem analítica que se preocupa com o ambiente político e institucional, com as “polias e engrenagens” do processo político em questão. Portanto, ocupa-se de como definir, medir e avaliar o processo de judicialização da política [@ernani3].
+
+É requisitada a análise científica apurada no enfoque metodológico, de modo a buscar respostas à questão fundamental e a compreender o comportamento das instituições judiciais quanto à aplicação de seus vetos, em direção à estabilidade do cenário político ou à facilitação de mudanças no status quo.
+A revisão judicial é identificada pela maioria dos estudos em Direito e em Ciência Política como atividade casual do jogo político, ou seja, como estratégia potencial e alternativa aos interesses derrotados na esfera legislativa, utilizada com o escopo de obter a aplicação judicial dos limites constitucionais à atividade legiferante.
+
+No entanto, parcela do comportamento do Supremo Tribunal Federal (STF) no julgamento de ações diretas de inconstitucionalidade sugerem na direção oposta: a autorrestrição, uma vez que a Corte demonstra, ao longo dos últimos vinte anos, uma tendência cooperativa com os interesses do Poder Executivo, quando acionada pelos mecanismos de controle de constitucionalidade (revisão judicial), seja confirmando a constitucionalidade da legislação, seja alegando a presença de vícios formais, seja ainda simplesmente deixando informalmente de julgar um grande número de conflitos.
+
+O termo autorrestrição, dentre muitas definições existentes, pode ser compreendido como sendo um princípio político substantivo utilizado por juízes, quando provocados a decidir certos conflitos, para o não exercício da revisão judicial dos atos legislativos (controle de constitucionalidade ou de legalidade), em circunstâncias cujas características incentivem o afastamento do órgão judicial supremo de suas funções típicas.
+
+Entretanto, tal comportamento apresenta-se contraditório em relação ao desenho constitucional brasileiro, cujas disposições determinam o dever de apreciação jurisdicional de todas as questões submetidas ao Judiciário, sendo a recusa formal ou informal ao exercício de poder que lhe foi delegado pela Constituição um fenômeno que ainda demanda respostas substantivas. Por outro lado, esse direcionamento afasta-se do lugar comum e se aproxima da tese de Dahl, para quem as Cortes Supremas tendem, na maioria das vezes, a se manter consistentes com os valores da maioria legislativa e, apenas em casos específicos, agem efetivamente em caráter contra majoritário.
+
+O estudo da trajetória do sistema de revisão judicial no Brasil tem mostrado a forma como a Corte suprema tem atuado, seja de forma ativista ou autorrestritiva: há judicialização da política sempre que os tribunais, no desempenho normal de suas funções, influenciam de modo significativo as condições da ação política. Nesse sentido, o Poder Judiciário, de acordo com a situação apresentada, passa a exercer com maior frequência as suas funções atípicas (ativismo) ou deliberadamente escolhe não exercê-las (autorrestrição).
+
+Modelos formais e comportamento abstensivo das instituições judiciais
+========
+
+Um modelo causal em ciências sociais (Sociologia, Ciência Política, Direito e etc.) consiste na articulação de uma série de variáveis, premissas e equações, tomadas como representações numéricas, ordinais ou categóricas de aspectos de um fato ou de um fenômeno, utilizada como ferramenta para capturar a essência de um comportamento e explicar os processos intrínsecos à sua ocorrência.
+
+Quando se trata de entender o comportamento judicial, notadamente, o que influencia no processo de tomada de decisões – seja a decisão judicial expressa, seja a silenciosa decisão de não levar uma questão a julgamento – a literatura oferece, entre outros, o modelo legalista.
+
+A partir desse modelo, o juiz aplicaria o Direito de forma imparcial, sem apego às ideologias. A teoria legalista destaca que o “ethos” profissional dos juízes lhes direciona para aplicação imparcial do Direito, desconsiderando a influência da ideologia e de outros fatores extrajurídicos, sobretudo quando são analisadas decisões de uma Suprema Corte em questões moral e politicamente controvertidas.
+
+Neste sentido, tanto o ativismo, quanto a sua contraparte, a autorrestrição, têm-se revelado em diferentes dimensões e sofrido influência de razões de natureza política, institucional, social e jurídico-cultural, sendo um campo fértil à pesquisa empírica a identificação desses fatores, no caso, das variáveis explicativas do comportamento judicial, pois requer uma explicação rica em características variadas e peculiares.
+
+A confirmação ou a negação das hipóteses inerentes ao referido modelo trará informações relevantes sobre o comportamento do Supremo Tribunal Federal, mais precisamente sobre a existência de uma seletividade na formação da pauta de julgamento e consequentemente, dos fatores que influenciam contrariamente ao julgamento do conflito constitucional.
+
+Demora no julgamento como consequência do comportamento seletivo do STF 
+=========
+
+Uma vez que esta pesquisa está focada na seletividade judicial, especificamente, sobre a formação das restrições dos relatores e nos efeitos dessas restrições sobre a decisão de não apresentar para julgamento os processos de controle concentrado de constitucionalidade – especialmente as ADINs – buscou-se identificar quais variáveis estariam associadas ao comportamento descrito e cuja presença influenciariam na sua concretização.
+
+Conforme mencionado nas notas introdutórias, esta pesquisa visa colher uma amostra aleatória casos, proporcionalmente distribuídos na série temporal compreendida entre 1989 e 2017, com intervalo de confiança de 95% e desvio padrão de 5%, do universo de mais de 5.400 ADINs distribuídas até aquele momento. A partir das informações desses casos, colhidas diretamente do endereço eletrônico do STF, vão ser codificadas variáveis categóricas explicativas referentes ao modelo formal legalista (título I à título IX da Constituição) de explicação do comportamento judicial já referido. 
+
+Tais variáveis, em um segundo momento, vão ser submetidas à análise estatística por regressão logística binária para verificar a existência, ou não, de associação entre tais variáveis e a variável dependente (resposta) referente ao comportamento abstensivo judicial (1 = aguardando julgamento; 0 = demais resultados), replicando metodologia anterior utilizada por [@taylor] na sua tese sobre a concessão de liminares em ADINs.
+
+Análises por regressão logística são úteis à previsão da ocorrência de variáveis dicotômicas, concentrando-se nas chances de um evento ocorrer e em quais variáveis explicativas estariam associadas ao aumento ou na redução das chances de resultado sobre outro (Levin et al., 2012). Assim, pretende-se aferir se determinadas variáveis categóricas, quando associadas ao caso, aumentam ou diminuem as chances deste permanecer no resultado aguardando julgamento.
 
 
 AnÃ¡lise dos dados
@@ -399,7 +447,7 @@ ggplot(dados,aes(x = TIX,y = TEMPO)) + geom_boxplot() + theme_linedraw() + title
 
 ###Modelos EstatÃ­sticos
 
-Agora iremos ajustar um modelo de regressÃ£o para o tempo fora de pauta cujas variÃ¡veis explicativas serÃ£o a presenÃ§a ou nÃ£o de cada tÃ­tulo. ComeÃ§amos ajustando um Modelo de RegressÃ£o Linear Normal. Pela anÃ¡lise de resÃ­duos vemos que este modelo nÃ£o estÃ¡ bem ajustado. De fato, analisando-se o grÃ¡fico QQ-plot dos resÃ­duos padronizados pelos quantis teÃ³ricos, tem-se que os pontos nÃ£o estÃ£o bem ajustados sobre a reta diagonal, apresentando caudas acima da reta. Isso Ã© evidÃªncia de que os erros nÃ£o apresentam distribuiÃ§Ã£o Normal, e por isso nÃ£o seguem a suposiÃ§Ã£o do modelo, de forma que o modelo nÃ£o estÃ¡ bem ajustado. 
+Agora irei ajustar um modelo de regressÃ£o para o tempo fora de pauta cujas variÃ¡veis explicativas serÃ£o a presenÃ§a ou nÃ£o de cada tÃ­tulo. Comecei ajustando um Modelo de RegressÃ£o Linear Normal. Pela anÃ¡lise de resÃ­duos vi que este modelo nÃ£o estÃ¡ bem ajustado. De fato, analisando-se o grÃ¡fico QQ-plot dos resÃ­duos padronizados pelos quantis teÃ³ricos, tem-se que os pontos nÃ£o estÃ£o bem ajustados sobre a reta diagonal, apresentando caudas acima da reta. Isso Ã© evidÃªncia de que os erros nÃ£o apresentam distribuiÃ§Ã£o Normal, e por isso nÃ£o seguem a suposiÃ§Ã£o do modelo, de forma que o modelo nÃ£o estÃ¡ bem ajustado. 
 
 ```{r modNormal,fig.align='center', echo=FALSE, warning=FALSE, message=FALSE}
 mod1 <- lm(TEMPO ~ TI + TII + TIII + TIV + TV + TVI + TVII + TVIII + TIX,dados)
@@ -454,7 +502,7 @@ resanalysis <- function(model){
 r <- resanalysis(mod1)
 ```
 
-ApÃ³s uma transformaÃ§Ã£o do tempo pelo logaritmo ajustamos um novo Modelo de RegressÃ£o Linear Normal. Novamente, vemos pela anÃ¡lise de resÃ­duos que o modelo nÃ£o estÃ¡ bem ajustado e, novamente, analisando-se o grÃ¡fico QQ-plot dos resÃ­duos padronizados pelos quantis teÃ³ricos, tem-se que os pontos nÃ£o estÃ£o bem ajustados sobre a reta diagonal, apresentando caudas acima da reta. Isso Ã© evidÃªncia de que os erros nÃ£o apresentam distribuiÃ§Ã£o Normal, e por isso nÃ£o seguem a suposiÃ§Ã£o do modelo, de forma que o modelo nÃ£o estÃ¡ bem ajustado. 
+Após uma transformação do tempo pelo logaritmo ajustamos um novo Modelo de Regressão Linear Normal. Novamente, vi pela análise de resíduos que o modelo não está bem ajustado e, novamente, analisando-se o gráfico QQ-plot dos resíduos padronizados pelos quantis teÃ³ricos, tem-se que os pontos nÃ£o estÃ£o bem ajustados sobre a reta diagonal, apresentando caudas acima da reta. Isso Ã© evidÃªncia de que os erros nÃ£o apresentam distribuiÃ§Ã£o Normal, e por isso nÃ£o seguem a suposiÃ§Ã£o do modelo, de forma que o modelo nÃ£o estÃ¡ bem ajustado. 
 
 ```{r modNormalLog,fig.align='center', echo=FALSE, warning=FALSE, message=FALSE}
 mod2 <- lm(log(TEMPO) ~ TI + TII + TIII + TIV + TV + TVI + TVII + TVIII + TIX,dados)
@@ -462,7 +510,7 @@ kable(anova(mod2))
 r <- resanalysis(mod2)
 ```
 
-Agora ajustamos um Modelo de RegressÃ£o com resposta exponencial (GLM), no qual observamos, pela anÃ¡lise dos resÃ­duos, que o modelo parece estar bem ajustado, jÃ¡ que eles se comportam como uma amostra de uma DistribuiÃ§Ã£o Normal. Observamos que, a um nÃ­vel de significÃ¢ncia estatÃ­stica de 5\%, temos que uma ADIN ser de um determinado tema, de qualquer tÃ­tulo que seja, nÃ£o altera o tempo em que estÃ¡ fora de pauta, pois nenhum dos p-valores estÃ£o abaixo de 0,05. A uma significÃ¢ncia de 10\%, apenas o tema TÃ­tulo I influencia o tempo que a ADIN permanece fora de pauta, pois seu p-valor Ã© menor do que 0,10.
+Agora ajustei um Modelo de RegressÃ£o com resposta exponencial (GLM), no qual observei, pela anÃ¡lise dos resÃ­duos, que o modelo parece estar bem ajustado, jÃ¡ que eles se comportam como uma amostra de uma DistribuiÃ§Ã£o Normal. Observei que, a um nÃ­vel de significÃ¢ncia estatÃ­stica de 5\%, temos que uma ADIN ser de um determinado tema, de qualquer tÃ­tulo que seja, nÃ£o altera o tempo em que estÃ¡ fora de pauta, pois nenhum dos p-valores estÃ£o abaixo de 0,05. A uma significÃ¢ncia de 10\%, apenas o tema TÃ­tulo I influencia o tempo que a ADIN permanece fora de pauta, pois seu p-valor Ã© menor do que 0,10.
  
 ```{r modExp,fig.align='center',results = 'hide', echo=FALSE, warning=FALSE, message=FALSE}
 mod3 <- gamlss(TEMPO ~ TI + TII + TIII + TIV + TV + TVI + TVII + TVIII + TIX,data = dados,
@@ -475,7 +523,7 @@ kable(s3)
 plot(mod3)
 ```
 
-Por fim, tambÃ©m ajustamos um Modelo de RegressÃ£o com resposta Gama. Aqui, tambÃ©m observamos, pela anÃ¡lise dos resÃ­duos, que o modelo parece estar bem ajustado. Assim como para o Modelo Exponencial, a um nÃ­vel de significÃ¢ncia estatÃ­stica de 5\%, temos que uma ADIN ser de um determinado tema, de qualquer tÃ­tulo que seja, nÃ£o altera o tempo em que estÃ¡ fora de pauta, pois nenhum dos p-valores estÃ£o abaixo de 0,05. Ainda, a uma significÃ¢ncia de 10\%, apenas o tema TÃ­tulo I influencia o tempo que a ADIN permanece fora de pauta, pois seu p-valor Ã© menor do que 0,10.
+Por fim, tambÃ©m ajustei um Modelo de RegressÃ£o com resposta Gama. Aqui, tambÃ©m observei, pela anÃ¡lise dos resÃ­duos, que o modelo parece estar bem ajustado. Assim como para o Modelo Exponencial, a um nÃ­vel de significÃ¢ncia estatÃ­stica de 5\%, temos que uma ADIN ser de um determinado tema, de qualquer tÃ­tulo que seja, nÃ£o altera o tempo em que estÃ¡ fora de pauta, pois nenhum dos p-valores estÃ£o abaixo de 0,05. Ainda, a uma significÃ¢ncia de 10\%, apenas o tema TÃ­tulo I influencia o tempo que a ADIN permanece fora de pauta, pois seu p-valor Ã© menor do que 0,10.
 
 ```{r modGam,fig.align='center',results = 'hide', echo=FALSE, warning=FALSE, message=FALSE}
 mod4 <- gamlss(TEMPO ~ TI + TII + TIII + TIV + TV + TVI + TVII + TVIII + TIX,data = dados,
@@ -488,7 +536,7 @@ kable(s4)
 plot(mod4)
 ```
  
-ConcluÃ­mos assim que, a uma significÃ¢ncia de 5\%, a presenÃ§a de nenhum tema influencia o tempo em que uma ADIN permanece fora de pauta. JÃ¡ a uma significÃ¢ncia de 10\%, apenas a presenÃ§a do tema TÃ­tulo I influencia o tempo em que uma ADIN permanece fora de pauta.
+Concluí assim que, a uma significÃ¢ncia de 5\%, a presenÃ§a de nenhum tema influencia o tempo em que uma ADIN permanece fora de pauta. JÃ¡ a uma significÃ¢ncia de 10\%, apenas a presenÃ§a do tema TÃ­tulo I influencia o tempo em que uma ADIN permanece fora de pauta.
 
 <br>
 
