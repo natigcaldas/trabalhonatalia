@@ -1,0 +1,259 @@
+---
+title: "Títulos Constitucionais"
+author: "Nat�lia Grassano Caldas"
+date: "17 de janeiro de 2019"
+output: html_document
+---
+
+##Introdução
+
+**(TEXTO DESCREVENDO A PESQUISA)**
+
+##Análise dos dados
+
+Os dados a serem analisados estão no arquivo *titulos_STF.csv*. O conjunto de dados é formado por 11 colunas. A primeira coluna apresenta o número da ADIN. A segunda coluna apresenta o tempo que a ADIN permaneceu fora de pauta. As demais colunas representam Títulos, numerados de I a IV, sendo que se o valor de uma ADIN na coluna de um determinado Título for igual a 1, então ela faz parte desse Título; se for zero, então ela não parte desse Título.
+
+```{r leitura,autodep=TRUE}
+#Pacotes
+library(plyr)
+suppressMessages(library(tidyverse))
+library(knitr)
+library(ggplot2)
+suppressMessages(library(gridExtra))
+suppressMessages(library(gamlss))
+
+#Parâmetros para gráficos
+titles <- theme(strip.text = element_text(size = 12), axis.text = element_text(size = 12,color = "black"),                   axis.title = element_text(size = 14), legend.text = element_text(size = 14),
+                legend.title = element_text(size = 14), panel.grid.major = element_blank(),
+                panel.grid.minor = element_blank(), panel.border = element_blank(),
+                panel.background = element_rect(fill="white",size=0.5, linetype="solid",color = "black"),
+                legend.background = element_rect(fill="white",size=0.5, linetype="solid",color = "black"),
+                legend.position="bottom",legend.spacing.x = unit(0.5, 'cm'))
+
+#Trocar pelo seu working directory
+setwd("~/GDrive/Assessoria Estatística/Estatística/2019/Natalia Caldas (JAN2019)/Dados")
+dados <- read.csv(file = "titulos_STF.csv")
+
+#Organizando os dados
+dados$ADINS <- factor(dados$ADINS)
+for(i in 3:11){
+  dados[,i] <- as.factor(dados[,i])
+  dados[,i] <- mapvalues(dados[,i],c("0","1"),c("Não","Sim"))
+}
+
+#Excluindo um outilier
+dados <- dados %>% filter(TEMPO < max(TEMPO))
+
+head(dados)
+```
+
+O objetivo das análises será verificar se os temas das Ações Diretas de Inconstitucionalidade que ainda não foram julgadas influenciam diretamente no tempo em que estas permanecem sem serem incluídas em pauta de julgamento. Para tanto, iremos analisar o conjunto de dados descritivamente e ajustaremos um modelo aos dados para determinar se há uma influência estatisticamente significativa do título de uma ADIN no tempo que ela permanece fora de pauta.
+
+###Análise Descritiva
+
+#####Título I
+```{r titulo I,fig.align='center'}
+#Medidas resumos que iremos utilizar
+estatisticas <- list("N" = length,"Média" = mean,"DesvioPadrão" = sd,"Mínimo" = min,
+                     "1Quartil" = function(x) quantile(x = x,probs = 0.25),
+                     "Mediana" = median,"3Quartil" = function(x) quantile(x = x,probs = 0.75),
+                     "Máximo" = max)
+
+#Calcula as medidas resumo para uma variável x
+resumo <- function(x){
+    r <- vector()
+    for(i in 1:length(estatisticas))
+      r[i] <- estatisticas[[i]](x)
+    names(r) <- names(estatisticas)
+    return(r)
+}
+
+#Medidas resumo do tempo fora de pauta por presença ou não do título I
+t <- do.call(rbind,tapply(X = dados$TEMPO,INDEX = dados$TI,FUN = resumo))
+kable(t)
+
+#Box-plot do tempo por presença ou não do título I
+ggplot(dados,aes(x = TI,y = TEMPO)) + geom_boxplot() + theme_linedraw() + titles + xlab("Título I") + ylab("Tempo")
+
+#O código para os demais títulos é análogo, trocando apenas TI pelo título que se quer
+```
+
+#####Título II
+```{r titulo II,echo = FALSE,fig.align='center'}
+#Medidas resumo do tempo fora de pauta por presença ou não do título II
+t <- do.call(rbind,tapply(X = dados$TEMPO,INDEX = dados$TII,FUN = resumo))
+kable(t)
+
+#Box-plot do tempo por presença ou não do título II
+ggplot(dados,aes(x = TII,y = TEMPO)) + geom_boxplot() + theme_linedraw() + titles + xlab("Título II") + ylab("Tempo")
+
+```
+
+#####Título III
+```{r titulo III,echo = FALSE,fig.align='center'}
+#Medidas resumo do tempo fora de pauta por presença ou não do título III 
+t <- do.call(rbind,tapply(X = dados$TEMPO,INDEX = dados$TIII,FUN = resumo))
+kable(t)
+#Box-plot do tempo por presença ou não do título III
+ggplot(dados,aes(x = TIII,y = TEMPO)) + geom_boxplot() + theme_linedraw() + titles + xlab("Título III") + ylab("Tempo")
+
+```
+
+#####Título IV
+```{r titulo IV,echo = FALSE,fig.align='center'}
+#Medidas resumo do tempo fora de pauta por presença ou não do título IV
+t <- do.call(rbind,tapply(X = dados$TEMPO,INDEX = dados$TIV,FUN = resumo))
+kable(t)
+
+#Box-plot do tempo por presença ou não do título IV
+ggplot(dados,aes(x = TIV,y = TEMPO)) + geom_boxplot() + theme_linedraw() + titles + xlab("Título IV") + ylab("Tempo")
+
+```
+
+#####Título V
+```{r titulo V,echo = FALSE,fig.align='center'}
+#Medidas resumo do tempo fora de pauta por presença ou não do título V
+t <- do.call(rbind,tapply(X = dados$TEMPO,INDEX = dados$TV,FUN = resumo))
+kable(t)
+
+#Box-plot do tempo por presença ou não do título V
+ggplot(dados,aes(x = TV,y = TEMPO)) + geom_boxplot() + theme_linedraw() + titles + xlab("Título V") + ylab("Tempo")
+
+```
+
+#####Título VI
+```{r titulo VI,echo = FALSE,fig.align='center'}
+#Medidas resumo do tempo fora de pauta por presença ou não do título VI
+t <- do.call(rbind,tapply(X = dados$TEMPO,INDEX = dados$TVI,FUN = resumo))
+kable(t)
+
+#Box-plot do tempo por presença ou não do título VI
+ggplot(dados,aes(x = TVI,y = TEMPO)) + geom_boxplot() + theme_linedraw() + titles + xlab("Título VI") + ylab("Tempo")
+
+```
+
+#####Título VII
+```{r titulo VII,echo = FALSE,fig.align='center'}
+#Medidas resumo do tempo fora de pauta por presença ou não do título VII
+t <- do.call(rbind,tapply(X = dados$TEMPO,INDEX = dados$TVII,FUN = resumo))
+kable(t)
+
+#Box-plot do tempo por presença ou não do título VII
+ggplot(dados,aes(x = TVII,y = TEMPO)) + geom_boxplot() + theme_linedraw() + titles + xlab("Título VII") + ylab("Tempo")
+```
+
+#####Título VIII
+```{r titulo VIII,echo = FALSE,fig.align='center'}
+#Medidas resumo do tempo fora de pauta por presença ou não do título VIII
+t <- do.call(rbind,tapply(X = dados$TEMPO,INDEX = dados$TVII,FUN = resumo))
+kable(t)
+
+#Box-plot do tempo por presença ou não do título VIII
+ggplot(dados,aes(x = TVIII,y = TEMPO)) + geom_boxplot() + theme_linedraw() + titles + xlab("Título VIII") + ylab("Tempo")
+```
+
+#####Título IX
+```{r titulo IX,echo = FALSE,fig.align='center'}
+#Medidas resumo do tempo fora de pauta por presença ou não do título IX
+t <- do.call(rbind,tapply(X = dados$TEMPO,INDEX = dados$TIX,FUN = resumo))
+kable(t)
+
+#Box-plot do tempo por presença ou não do título IX
+ggplot(dados,aes(x = TIX,y = TEMPO)) + geom_boxplot() + theme_linedraw() + titles + xlab("Título IX") + ylab("Tempo")
+
+```
+
+###Modelos Estatísticos
+
+Agora iremos ajustar um modelo de regressão para o tempo fora de pauta cujas variáveis explicativas serão a presença ou não de cada título. Começamos ajustando um Modelo de Regressão Linear Normal. Pela análise de resíduos vemos que este modelo não está bem ajustado. De fato, analisando-se o gráfico QQ-plot dos resíduos padronizados pelos quantis teóricos, tem-se que os pontos não estão bem ajustados sobre a reta diagonal, apresentando caudas acima da reta. Isso é evidência de que os erros não apresentam distribuição Normal, e por isso não seguem a suposição do modelo, de forma que o modelo não está bem ajustado. 
+
+```{r modNormal,fig.align='center'}
+mod1 <- lm(TEMPO ~ TI + TII + TIII + TIV + TV + TVI + TVII + TVIII + TIX,dados)
+kable(anova(mod1))
+
+#Análise de resíduos para modelo normal
+resanalysis <- function(model){
+  #RESIDUOS, DISTANCIA DE COOK E PONTOS INFLUENTES
+  res <- rstandard(model)
+  fit <- model$fitted.values
+  cook <- cooks.distance(model)
+  influ <- influence(model)$hat
+   
+  #GRAFICO DE RESIDUOS
+  p1 <- {ggplot(data.frame(fit,res),aes(x = fit,y = res)) + geom_point() + theme_linedraw() + titles + 
+      geom_hline(yintercept = c(-2,0,2)) + xlab("Valores ajustados") + ylab("Resíduos padronizados") +
+      ggtitle("Grafico dos resíduos padronizados")}
+  
+  #QQ-PLOT
+  g1 <- ggplot(data.frame(res), aes(sample = res))
+  y <- quantile(res[!is.na(res)], c(0.25, 0.75))
+  x <- qnorm(c(0.25, 0.75))
+  slope <- diff(y)/diff(x)
+  int <- y[1L] - slope * x[1L]
+  p2 <- {g1 + stat_qq() + theme_linedraw() + geom_abline(slope = slope, intercept = int) +
+      titles + xlab("Quantis teóricos") + ylab("Resíduos padronizados") + ggtitle("QQ-Plot")}
+  
+  #GRAFICO DAS DISTANCIAS DE COOK
+  obs <- 1:length(res)
+  g3 <- data.frame(1:length(res),cook)
+  colnames(g3) <- c("obs","cook")
+  p3 <- {ggplot(g3,aes(x = obs,y = cook)) + geom_point() + theme_linedraw() + titles + xlab("Observação") + 
+      ylab("Distância de Cook") + ggtitle("Distância de Cook") + geom_hline(yintercept = 4/length(res)) +
+  annotate("text",size = 3,x = obs[rank(cook) == length(res)]+log(log(length(res)))*(0.75),y = cook[rank(cook) == length(res)],label = as.character(obs[rank(cook) == length(res)])) +
+  annotate("text",size = 3,x = obs[rank(cook) == length(res)-1]+log(log(length(res)))*(0.75),y = cook[rank(cook) == length(res)-1],label = as.character(obs[rank(cook) == length(res)-1]))+
+  annotate("text",size = 3,x = obs[rank(cook) == length(res)-2]+log(log(length(res)))*(0.75),y = cook[rank(cook) == length(res)-2],label = as.character(obs[rank(cook) == length(res)-2]))}
+  
+  #GRAFICO DE INFLUENCIA
+  g4 <- data.frame(1:length(res),influ)
+  colnames(g4) <- c("obs","influ")
+  p4 <- {ggplot(g4,aes(x = obs,y = influ)) + geom_point() + theme_linedraw() + titles + xlab("Observação") + 
+           ylab("Hat matrix diagonal") + ggtitle("Influência")+
+           annotate("text",size = 3,x = obs[rank(influ) == length(res)]+log(log(length(res)))*(0.75),y = influ[rank(influ) == length(res)],label = as.character(obs[rank(influ) == length(res)])) +
+           annotate("text",size = 3,x = obs[rank(influ) == length(res)-1]+log(log(length(res)))*(0.75),y = influ[rank(influ) == length(res)-1],label = as.character(obs[rank(influ) == length(res)-1]))+
+           annotate("text",size = 3,x = obs[rank(influ) == length(res)-2]+log(log(length(res)))*(0.75),y = influ[rank(influ) == length(res)-2],label = as.character(obs[rank(influ) == length(res)-2]))}
+  
+  p <- grid.arrange(p1,p2,p3,p4,nrow = 2,ncol = 2)
+  r <- list(p)
+  names(r) <- c("plot")
+  return(r)
+}
+r <- resanalysis(mod1)
+```
+
+Após uma transformação do tempo pelo logaritmo ajustamos um novo Modelo de Regressão Linear Normal. Novamente, vemos pela análise de resíduos que o modelo não está bem ajustado e, novamente, analisando-se o gráfico QQ-plot dos resíduos padronizados pelos quantis teóricos, tem-se que os pontos não estão bem ajustados sobre a reta diagonal, apresentando caudas acima da reta. Isso é evidência de que os erros não apresentam distribuição Normal, e por isso não seguem a suposição do modelo, de forma que o modelo não está bem ajustado. 
+
+```{r modNormalLog,fig.align='center'}
+mod2 <- lm(log(TEMPO) ~ TI + TII + TIII + TIV + TV + TVI + TVII + TVIII + TIX,dados)
+kable(anova(mod2))
+r <- resanalysis(mod2)
+```
+
+Agora ajustamos um Modelo de Regressão com resposta exponencial (GLM), no qual observamos, pela análise dos resíduos, que o modelo parece estar bem ajustado, já que eles se comportam como uma amostra de uma Distribuição Normal. Observamos que, a um nível de significância estatística de 5\%, temos que uma ADIN ser de um determinado tema, de qualquer título que seja, não altera o tempo em que está fora de pauta, pois nenhum dos p-valores estão abaixo de 0,05. A uma significância de 10\%, apenas o tema Título I influencia o tempo que a ADIN permanece fora de pauta, pois seu p-valor é menor do que 0,10.
+ 
+```{r modExp,fig.align='center',results = 'hide'}
+mod3 <- gamlss(TEMPO ~ TI + TII + TIII + TIV + TV + TVI + TVII + TVIII + TIX,data = dados,
+               family = EXP())
+s3 <- summary(mod3)
+```
+
+```{r modExp2,fig.align='center'}
+kable(s3)
+plot(mod3)
+```
+
+Por fim, também ajustamos um Modelo de Regressão com resposta Gama. Aqui, também observamos, pela análise dos resíduos, que o modelo parece estar bem ajustado. Assim como para o Modelo Exponencial, a um nível de significância estatística de 5\%, temos que uma ADIN ser de um determinado tema, de qualquer título que seja, não altera o tempo em que está fora de pauta, pois nenhum dos p-valores estão abaixo de 0,05. Ainda, a uma significância de 10\%, apenas o tema Título I influencia o tempo que a ADIN permanece fora de pauta, pois seu p-valor é menor do que 0,10.
+
+```{r modGam,fig.align='center',results = 'hide'}
+mod4 <- gamlss(TEMPO ~ TI + TII + TIII + TIV + TV + TVI + TVII + TVIII + TIX,data = dados,
+               family = GA())
+s4 <- summary(mod4)
+```
+
+```{r modGam2,fig.align='center'}
+kable(s4)
+plot(mod4)
+```
+ 
+**Concluímos assim que, a uma significância de 5\%, a presença de nenhum tema influencia o tempo em que uma ADIN permanece fora de pauta. Já a uma significância de 10\%, apenas a presença do tema Título I influencia o tempo em que uma ADIN permanece fora de pauta.**
+
+
